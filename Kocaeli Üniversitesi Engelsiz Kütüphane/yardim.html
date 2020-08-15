@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="tr"><head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Kocaeli Üniversitesi Engelsiz Kütüphane</title>
+
+    <link href="tasarim.css" rel="stylesheet" type="text/css" />
+
+<script src="functions.js" type="text/javascript"></script>
+
+
+
+</head>
+
+<body class="tasarim" >
+
+    <div class="cerceve">
+        <div class="banner">
+            <div class="banner-logo-sol"><a href="index.html"><img src="Resimler/baslik/kou.jpg" alt="Kocaeli Üniversitesi" width="200" height="200" accesskey="i" /></a></div>
+            <div class="banner-baslik"> <img src= "Resimler/baslik/baslik.png" width="800" height="200"></div>
+            <div class="banner-logo-sag"> <img src="Resimler/baslik/engelsiz.jpg" width="200" height="200"></div>
+        </div>
+
+        <div class="menu" id="menu">
+        <table width="100%" border="0" >
+  <tr>
+    <td><a id="index" href="index.html" tabindex="1"> Anasayfa </a></td>
+    <td><a id="hizmetlerimiz" href="hizmetlerimiz.html" tabindex="2"> Hizmetlerimiz </a></td>
+    <td><a id="baskanligimiz" href="baskanligimiz.html" tabindex="3"> Başkanlığımız </a></td>
+    <td><a id="Katolog Tarama" href="http://library.kocaeli.edu.tr/yordambt/yordam.php" tabindex="4"> Katolog Tarama </a></td>
+    <td><a id="E Kaynaklar" href="ekaynaklar.html" tabindex="5"> E-Kaynaklar </a></td>
+    <td><a id="İletişim" href="iletisim.html" tabindex="6"> İletişim </a></td>
+  </tr>
+  
+</table>
+
+          
+        </div>
+
+    <div class="orta">
+      <div class="orta-sol" id="icerik" style="font-size:17px;"> 
+      
+     
+        
+         <audio controls id="music" name="music" >
+  
+  <source src="C:\Proje Yönetimi\Kocaeli Üniversitesi Engelsiz Kütüphane\Sesler\Yardim.mp3" type="audio/mpeg"  >
+Tarayıcınız audio elementini desteklemiyor.
+
+</audio> <!--İçerik ses-->
+
+      <audio controls  id="info" style="visibility: hidden;" name="info" >
+  
+  <source src="C:\Proje Yönetimi\Kocaeli Üniversitesi Engelsiz Kütüphane\Sesler\TusKombinasyonlari.mp3" type="audio/mpeg"  >
+Tarayıcınız audio elementini desteklemiyor.
+
+</audio> <!-- info ses-->
+
+  <audio controls  id="hg" style="visibility: hidden;" name="hg" >
+  
+  <source src="C:\Proje Yönetimi\Kocaeli Üniversitesi Engelsiz Kütüphane\Sesler\YardimHG.mp3" type="audio/mpeg"  >
+Tarayıcınız audio elementini desteklemiyor.
+
+</audio> <!-- HG ses-->
+
+
+<button id="basla" name="basla" style="visibility: hidden;" value="" accesskey="o" onClick="start('music');" > </button><!--içerik başlat-->
+   <button id="dur" name="dur" style="visibility: hidden;" value="" accesskey="k" onClick="pause('music');"> </button> <!--içerik durdur-->
+<button id="inf" name="inf" style="visibility: hidden;" value="" accesskey="b" onClick="start('info');" > </button><!--info başlat-->
+      <button id="hgbasla" name="hgbasla" style="visibility: hidden;" value="" accesskey="q" onClick="start('hg');" > </button><!--hg başlat-->
+   <button id="hgdur" name="hgdur" style="visibility: hidden;" value="" accesskey="s" onClick="pause('hg');"> </button> <!--hg durdur-->
+    <br>
+
+  <p style="text-align:center;font-size:24px;"><b>Yardım</b></p>
+
+   
+<p style="padding-top:1px;text-align:center;"> Merhaba!<br>
+
+Kocaeli Engelsiz  Kütüphane web sayfasına hoş geldiniz. <br><br>
+
+
+Sesli kitap hizmetimize kütüphanemiz ana sayfasından http://library.kocaeli.edu.tr/yordambt/yordam.php adresinden ulaşabilirsiniz.
+Web sayfamızı daha kolay bir şekilde kısa yol tuşları ile kullanabilirsiniz. İstediğiniz sayfaya gitmek için ilgili tuşlara basmanız yeterlidir. <br><br>
+
+
+
+Alt +a---tüm sesi aç / tüm sesi kapat<br>
+
+
+
+
+Alt + 0 = İçerik okuma<br>
+
+                                                     
+Alt + (-) = Yazı küçültme<br>
+
+Alt + k = İçerik durdurma<br>
+
+                                                                                                		 Alt + (*) = Renk Değiştirme<br>
+
+Alt + b = Bilgilendirme<br>
+                                                  		    Alt + V = Varsayılana dön<br>
+
+Alt + (+) = Yazı büyütme <br>
+<br>
+
+
+Web sayfamızın sağ köşesinde bulunan "Yazı Boyutu" tuşunu kullanarak ekrandaki yazıların boyutunu ayarlayabilirsiniz
+Web sayfamızın sağ köşesinde bulunan "Renk Değiştirme" tuşunu kullanarak ekrandaki içeriğin  rengini ayarlayabilirsiniz
+Web sayfamızın sağ köşesinde bulunan "Varsayılan" tuşunu kullanarak içeriğimizi varsayılan haline ayarlayabilirsiniz
+	
+</p>
+
+  
+    </div>
+      <div class="orta-sag">
+
+ <img src="Resimler/sagmenu/buyut.png" width="40" height="40" name="Arttır" alt="Yazı Büyült" onclick="boyutdegistir('icerik','4');" accesskey="+" tabindex="9">
+  <img src="Resimler/sagmenu/kucult.png" width="40" height="40" name="Azalt" alt="Yazı Küçült" onclick="boyutdegistir('icerik','-4');" accesskey="-"tabindex="10">
+
+		   <input type="button" id="varsayilan" name="varsayılan" value="Varsayılan" onclick="varsayılanboyut('icerik','4');"accesskey="v" tabindex="11"alt="varsayilan"/>
+           
+        <img src="Resimler/sagmenu/renkdeistir.png" width="50" height="50" name="Renk" alt="Renk Değiştir" onclick="renkdegistir();" accesskey="*"tabindex="12">
+      <a href="yardim.html"><input type="submit" style="margin-top:20px;" value="Yardım" tabindex="7"/></a>
+        
+        
+      <div class="onoffswitch" style="margin-top:20px;">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch"  checked>
+    <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner" onClick="tooglebuttonstartstop('hg');" accesskey="a" tabindex="8" alt="Bilgilendirme" ></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div>
+
+
+   </div>	 </div>
+
+        <div class="alt"> <br><br>
+
+          <h4 style="text-align:center;margin:40;"> Bu Site Kocaeli Üniversitesi BÖTE bölümü öğrecileri Alp İşören, Nihatcan Kürkcü, Muhammet Sarı , Sevcan Koyuncu tarafından yapılmıştır. </h4> 
+      </div>
+        
+</div>
+
+    
+</body>
+</html>

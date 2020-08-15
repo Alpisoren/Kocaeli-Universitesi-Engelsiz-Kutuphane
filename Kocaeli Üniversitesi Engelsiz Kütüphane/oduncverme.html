@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html lang="tr"><head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Kocaeli Üniversitesi Engelsiz Kütüphane</title>
+
+    <link href="tasarim.css" rel="stylesheet" type="text/css" />
+
+<script src="functions.js" type="text/javascript"></script>
+
+
+
+</head>
+
+<body class="tasarim" >
+
+    <div class="cerceve">
+        <div class="banner">
+            <div class="banner-logo-sol"><a href="index.html"><img src="Resimler/baslik/kou.jpg" alt="Kocaeli Üniversitesi" width="200" height="200" accesskey="i" /></a></div>
+            <div class="banner-baslik"> <img src= "Resimler/baslik/baslik.png" width="800" height="200"></div>
+            <div class="banner-logo-sag"> <img src="Resimler/baslik/engelsiz.jpg" width="200" height="200"></div>
+        </div>
+
+        <div class="menu" id="menu">
+        <table width="100%" border="0" >
+  <tr>
+    <td><a id="index" href="index.html" tabindex="1"> Anasayfa </a></td>
+    
+    <td><a id="yararlanma kosullari" href="yararlanmakosullari.html" tabindex="2"> Yararlanma Koşulları </a></td>
+    
+    <td><a id="kutuphaneler arasi odunc" href="kutuphanelerarasiodunc.html" tabindex="3"> Kütüphaneler Arası Ödünç </a></td>
+    
+    <td><a id=" Bilgi Kaynağı Sağlama " href="bilgikaynagisaglama.html" tabindex="4"> Bilgi Kaynağı Sağlama </a></td>
+    
+    <td><a id="Danışma Hizmetleri" href="danismahizmetleri.html" tabindex="5"> Danışma Hizmetleri </a></td>
+    
+    <td><a id="Kopyalama" href="kopyalama.html" tabindex="6"> Kopyalama </a></td>
+    <td><a id="Ödünç Verme" href="oduncverme.html" tabindex="7"> Ödünç Verme </a></td>
+    <td><a id="Görme Engelliler Bölümü" href="gormeengellilerbolumu.html" tabindex="8"> Görme Engelliler Birimi </a></td>
+    <td><a id="Açık Erişim Arşivi" href="acikerisimarsivi.html" tabindex="9"> Açık Erişim Arşivi </a></td>
+    
+    <td><a id="İletişim" href="iletisim.html" tabindex="10"> İletişim </a></td>
+  </tr>
+  
+</table>
+
+          
+        </div>
+
+    <div class="orta">
+      <div class="orta-sol" id="icerik" style="font-size:17px;"> 
+      
+     
+        
+         <audio controls id="music" name="music" >
+  
+  <source src="C:\Proje Yönetimi\Kocaeli Üniversitesi Engelsiz Kütüphane\Sesler\OduncVerme.mp3" type="audio/mpeg"  >
+Tarayıcınız audio elementini desteklemiyor.
+
+</audio> <!--İçerik ses-->
+
+      <audio controls  id="info" style="visibility: hidden;" name="info" >
+  
+  <source src="C:\Proje Yönetimi\Kocaeli Üniversitesi Engelsiz Kütüphane\Sesler\TusKombinasyonlari.mp3" type="audio/mpeg"  >
+Tarayıcınız audio elementini desteklemiyor.
+
+</audio> <!-- info ses-->
+
+  <audio controls  id="hg" style="visibility: hidden;" name="hg" >
+  
+  <source src="C:\Proje Yönetimi\Kocaeli Üniversitesi Engelsiz Kütüphane\Sesler\OduncVermeHG.mp3" type="audio/mpeg"  >
+Tarayıcınız audio elementini desteklemiyor.
+
+</audio> <!-- HG ses-->
+
+
+<button id="basla" name="basla" style="visibility: hidden;" value="" accesskey="o" onClick="start('music');" > </button><!--içerik başlat-->
+   <button id="dur" name="dur" style="visibility: hidden;" value="" accesskey="k" onClick="pause('music');"> </button> <!--içerik durdur-->
+<button id="inf" name="inf" style="visibility: hidden;" value="" accesskey="b" onClick="start('info');" > </button><!--info başlat-->
+      <button id="hgbasla" name="hgbasla" style="visibility: hidden;" value="" accesskey="q" onClick="start('hg');" > </button><!--hg başlat-->
+   <button id="hgdur" name="hgdur" style="visibility: hidden;" value="" accesskey="s" onClick="pause('hg');"> </button> <!--hg durdur-->
+   <p style="text-align:center;font-size:24px;"><b> Ödünç Verme  </b></p>
+
+   
+<p style="padding-top:1px;text-align:center;">Ödünç Verme Süreleri ve Ödünç Verilen Materyal Sayisi<br>
+<br>
+
+ 
+AKADEMIK PERSONEL : 60 Gün / 10 Kitap / 5 Kitap Disi<br>
+
+IDARI PERSONEL : 14 Gün / 5 Kitap / 5 Kitap Disi<br>
+
+DOKTORA ÖGRENCILERI : 30 Gün / 5 Kitap / 5 Kitap Disi<br>
+
+YÜKSEK LISANS ÖGRENCILERI : 30 Gün / 5 Kitap / 5 Kitap Disi<br>
+
+LISANS ÖGRENCILERI : 14 Gün / 5 Kitap / 5 Kitap Disi<br>
+
+ÖN LISANS ÖGRENCILERI : 14 Gün / 5 Kitap / 5 Kitap Disi<br>
+<br>
+
+ 
+Ödünç Verme Kurallari :<br>
+<br>
+
+ 
+a) Sadece üniversitemiz akademik, idari personeli ve ögrencileri ödünç verme hizmetlerinden yararlanabilirler.<br>
+
+b) Ödünç alma islemi sirasinda kimlik gösterilmesi zorunludur. Ögrencilerimizin kimliklerinde yer alan bandrollerin, geçerli ögretim yilina ait olmasi gerekmektedir.<br>
+
+c) Okur/Kullanici, kendi talebi ile diger üniversite kütüphanelerinden getirilen yayinlari almak ve bu hizmetten dogan ücretleri ödemekle yükümlüdür. (Bu hizmet sadece akademik personeli kapsar)<br>
+
+d) Üniversitelerarasi isbirliginin geregi olarak, diger üniversitelerin okur/kullanicilarina, ancak kendi kütüphaneleri araciligi ile ödünç kitap verilebilir.<br>
+
+e) Üniversite disindan gelen okur/kullanicilara kütüphane dahilinde yararlanma imkani saglanir ancak ödünç kitap verilmez. Fotokopi hizmetlerinden yararlanabilirler.<br>
+
+f) Akademik personel, bir defada en çok 10  kitabi iki ay ögrenciler (ön lisans, lisans) ve idari personel, 5 kitabi 14 gün, yüksek lisans ve doktora ögrencileri, 5 kitabi bir ay süreyle ödünç alabilirler.<br>
+
+g) Okur/kullanicilar ödünç aldiklari materyali ödünç verme süreleri sonunda iade etmedikçe yeni kitap ve diger materyali ödünç alamazlar.<br>
+
+h) Ödünç alinan materyal baskasi tarafindan ayirtilmadiysa, akademik ve idari personel, doktora, ön lisans, lisans ve yüksek lisans ögrencileri 2 (iki) kez uzatabilir. Süre uzatimi yapilan materyaller, ayni kisiye iadesinden bir hafta sonra tekrar ödünç verilebilir.<br>
+
+i) Uzatma islemi, materyalin iade tarihinde veya iade tarihinin 1 gün öncesinde yapilabilir. Ödünç süresi geçmis materyal için süre uzatma islemi yapilmaz.<br>
+
+j) Ödünç alinmis, yani okur/kullanici üzerinde bulunan materyal, baska bir okur/kullanici tarafindan ayirtilabilir. Ayirtilmis materyal ile ilgili süre uzatimi islemi yapilmaz. O materyal, son iade tarihinden sonraki 2 gün, ayirtan okur/kullanici için bekletilir.<br>
+
+k) Ödünç verme servisi, gerektiginde ödünç alinan materyali süre dolmadan okur/kullanicilardan geri isteyebilir.<br>
+
+l) Kütüphane materyalini ödünç alan okur/kullanicilar, materyalleri özenle kullanmak ve en geç ödünç verme süresi sonunda geri vermekle yükümlüdür.<br>
+
+m) Gerektiginde Daire Baskani, genel olarak ödünç verme süreleri ve verilebilecek materyal sayilarini yeniden belirleyebilir. <br>
+
+n) Sube ve Birim kütüphanelerindeki ödünç verme süreleri ve ödünç verilecek materyal sayilari Kütüphane ve Dokümantasyon Daire Baskani tarafindan belirlenir.
+ <br>
+<br>
+
+
+
+
+Ödünç verilemeyecek kitap ve diger materyaller:<br>
+<br>
+
+ 
+Asagida belirtilen kütüphane materyalleri ödünç verilmez:<br>
+
+ 
+a) Danisma kaynaklari (sözlük, ansiklopedi, el kitabi, dizin vb.),<br>
+
+b) Süreli yayinlar,
+<br>
+c) Tezler,
+<br>
+d) Yazma ve nadir basma eserler,
+<br>
+e) Atlas, harita vb.
+<br>
+f) Müzik notalari,
+<br>
+g) Koleksiyon parçalari, sanatsal materyaller vb.,
+<br>
+h) Daire Baskanligi tarafindan belirlenen ve kütüphane disina çikarilmasinda sakinca bulunan (örnegin tek nüsha ya da baskisi tükenmis vb.) diger materyaller :
+Bu materyallerden sadece kütüphane içinde ve gerektiginde bir görevlinin gözetiminde yararlandirilabilir.
+<br>
+ 
+Gününde Iade Edilmeyen Kitap ve Diger Materyal:
+23.06.2016 tarih ve 2016/8 nolu 30 sira sayili senato karari geregi;<br>
+
+a) Ödünç aldigi kitap veya diger materyalleri en geç ödünç verme süresi sonunda iade etmeyen veya süresini uzatmayan kisiden, baska hiçbir isleme gerek bulunmaksizin, süre sonunu izleyen günden itibaren geçen her gün ve her bir materyal için para cezasi alinir.<br>
+
+b) Ödünç alinan kitabin iadesi geciktirildiginde; geciktirilen her gün için 50 kurus ceza kullanicinin hesabina isler.<br>
+
+c) Geciktirme cezasi uygulanmaya baslanmis olan kisiye, ödünç aldigi materyali iade etmedigi veya ceza tutari 25 TL yi geçtigi durumda ödünç verme islemi yapilmaz. <br>
+
+d) Kullanicilar belirlenen ve kütüphanelerce duyurulmus olan gecikme cezasi miktarini ödemekle yükümlüdür. Kullanicinin sistem tarafindan hesaplanarak kendisine teblig edilen miktari;
+ <br>
+
+Rektörlük Strateji ve Geliştirme Daire Başkanlığı Ziraat Bankası Kocaeli Üniversitesi Şubesi TR36 0001 0027 2636 6764 1850 78 nolu hesaba,  Banka şubesinden (İnternet Bankacılığı ve ATM hariç) açıklama kısmına "Kütüphane ceza" yazdırılarak yatırması ve banka şubesinden alacağı banka dekontunu Ödünç Hizmetleri Birimine teslim etmesi gerekmektedir.<br>
+
+
+Kullanicilar bakiyelerindeki ceza miktari 25 TL. yi geçtigi takdirde toplam ceza miktarini bir defada ödeyeceklerdir. Banka ATM'si veya Online Bankacilik kanallariyla yapilan ödemeler kabul edilmeyecektir<br>
+
+e) Gecikme halinde, ilgili kullaniciya materyalin iadesi hakkinda e-posta yoluyla uyari yazisi yazilir. Bunun için kullanicilarin adres, e-posta bilgilerini girmis olmalari ve güncel tutmalari zorunludur.<br>
+
+f) Üyeler ödünç aldiklari materyali korumak, zarar vermemek ve gününde teslim etmekle yükümlüdürler. Iade tarihini ve gecikme durumunu hatirlatmak kütüphane sorumlulugunda olmayip, materyali zamaninda iade etmek kullanicinin sorumlulugundadir.<br>
+
+g) Yil içinde uygulanacak günlük ceza miktari Daire Baskaninin önerisi ile Rektör ya da ilgili Rektör Yardimcisi tarafindan belirlenir.<br>
+
+h) Gerekli durumlarda kurallar Kütüphane ve Dokümantasyon Daire Baskanliginca yeniden düzenlenir.
+ <br>
+<br>
+
+
+
+Ödünç Alinan Materyalin Yipratilmasi veya Kaybedilmesi :
+ <br>
+<br>
+
+a) Kullanici, kaybedilen materyal için Daire Baskanligina durumuna iliskin bildirimde bulunur. Geciktigi gün süresince olusan borcu hesabina islemeye devam eder. O dönem için geçerli olan hesap kotasini geçmesi halinde gecikme borcu uygulamasi prosedürlerine uygun olarak islem yapilir.<br>
+
+b) Yipratilan veya kaybedilen kütüphane materyalinin öncelikle aynisi ya da yeni baskisi temin ettirilir.<br>
+
+c) Yipratilan ve kaybedilen materyalin aynisi bulunamiyorsa, kütüphane yönetimi tarafindan onaylandigi taktirde (ör. baskisinin olmadigina dair bilginin ibraz edilmesi) ayni degerde baska materyal aldirilir. Yipratilan materyal kullaniciya verilmez. Kayitlardan düsürülmesi islemi yapilir.<br>
+
+d) Ödünç alinan materyalde cilt hasari olusmasi durumunda 30 TL. ceza alinir. Sayfa hasari veya ek hasari olusmasi durumunda ise materyale kayip islemi yapilir.<br>
+
+e) Kullanicinin kitabi kaybetmesi durumunda, varsa gecikme borcu hesabina islenir. Ayrica Türkçe kitaplar için 40 TL., yabanci dilde kitaplar için ise 70 TL. kaybetme cezasi alinir. 
+
+
+
+</p>
+
+  
+    </div>
+      <div class="orta-sag">
+
+ <img src="Resimler/sagmenu/buyut.png" width="40" height="40" name="Arttır" alt="Yazı Büyült" onclick="boyutdegistir('icerik','4');" accesskey="+" tabindex="13">
+  <img src="Resimler/sagmenu/kucult.png" width="40" height="40" name="Azalt" alt="Yazı Küçült" onclick="boyutdegistir('icerik','-4');" accesskey="-" tabindex="14">
+
+		   <input type="button" id="varsayilan" name="varsayılan" value="Varsayılan" onclick="varsayılanboyut('icerik','4');"accesskey="v" tabindex="15" alt="varsayılan"/>
+           
+        <img src="Resimler/sagmenu/renkdeistir.png" width="50" height="50" name="Renk" alt="Renk Değiştir" onclick="renkdegistir();" accesskey="*" tabindex="16">
+      <a href="yardim.html"><input type="submit" style="margin-top:20px;" value="Yardım" tabindex="11" alt="Yardım"/></a>
+        
+        
+      <div class="onoffswitch" style="margin-top:20px;">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch"  checked>
+    <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner" onClick="tooglebuttonstartstop('hg');" accesskey="a" tabindex="12" alt="bilgilendirme"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div>
+
+
+   </div>	 </div>
+
+        <div class="alt"> <br><br>
+
+        <h4 style="text-align:center;margin:40;"> Bu Site Kocaeli Üniversitesi BÖTE bölümü öğrecileri Alp İşören, Nihatcan Kürkcü, Muhammet Sarı , Sevcan Koyuncu tarafından yapılmıştır. </h4>
+      </div>
+        
+</div>
+
+   
+</body>
+</html>

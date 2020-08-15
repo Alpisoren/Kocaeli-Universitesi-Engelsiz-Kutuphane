@@ -1,0 +1,178 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+p{
+	padding:15px;
+	margin:15px;
+	}
+.tasarim {
+    font-family: Arial;
+    font-size: 14px;
+    font-style: normal;
+    color: #FF0;
+    background-color: #000;
+    margin: 30px;
+}
+
+.cerceve {
+    width:1250px;
+	height:1400px;
+    margin-top: 30px;
+	margin-left:2px;
+	margin-right:50px;
+}
+
+.banner {
+    height: 200px;
+    margin-left: 65px;
+    display: flex;
+	 width:1250px;
+}
+
+.banner-logo-sol {
+    height: 200px;
+    float: left;
+    width: auto;
+}
+
+.banner-baslik {
+	float: left;
+	width: auto;
+	
+	
+	height: 200;
+	font-family: Arial;
+	font-size: 38px;
+	font-style: normal;
+	
+	text-align:center;
+	
+
+}
+
+.banner-logo-sag {
+    width: auto;
+    float: left;
+    height: 200px;
+}
+
+.menu {
+	 
+	 display: flex;
+    margin-left: 1px;
+	 float:left;
+	  width: 1300px;
+	  font-size:18px;
+	  font-weight:bold;
+	  border: 1px solid #FFFF;
+
+	}
+	#menu a { padding:15px; font-weight:bold; float:left; }
+   #menu a:link { color:#FF0; background-color:#000000; text-decoration: none; }
+   #menu a:visited { color:#FF0; background-color:#000000;text-decoration: none; }
+   #menu a:hover { color:#000000; background-color:#ffffff;text-decoration: none; }
+    #menu a:active { color:#FF0; background-color:#000000; text-decoration: none; }
+	
+	
+.orta-sol{
+	width: 1050px;
+	  height: auto;
+	float:left;
+	margin-left:25px;
+	margin-right:25px;
+	margin-top:50px;
+	 border: 2px solid #FFFF;
+	}
+	
+.orta-sag{
+	
+	width: 100px;
+	  height: 100px;
+	  float:right;
+	  position:fixed;
+	  right:50px;
+	  margin-top:75px;
+	  padding-left:45px;
+	}
+	
+	.alt{
+	width: 950px;
+	  height: 200px;
+	 float:left;
+	 margin-top:125px;
+	}
+	/*personel resim çerçeve divi*/
+	.personeldiv
+	{
+		float:left;
+		margin:20px;
+		}
+		.personelsiradiv{
+			
+			margin-left:55px;}
+			/*personel resim çerçeve divi*/
+			
+			.acikkaynakdiv
+	{
+		float:left;
+		margin:20px;
+		width: 400px;
+	  height: 100px;
+		
+		}
+		.acikkaynaksiradiv{
+			
+			margin-left:55px;}
+			
+			
+			
+			
+			
+			
+			/*Toogle button*/
+	.onoffswitch {
+    position: relative; width: 110px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "Sesi Aç";
+    padding-left: 10px;
+    background-color: #FF0; color: #000000;
+}
+.onoffswitch-inner:after {
+    content: "Sesi Kapat";
+    padding-right: 10px;
+    background-color: #000000; color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 78px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}	
+/*Toogle button*/
